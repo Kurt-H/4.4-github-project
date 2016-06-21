@@ -1,15 +1,15 @@
 var $ = require('jQuery');
 var handlebars = require('handlebars');
 
-var githubtoken = require('./githubapikey.js');
-
-if (githubtoken !== undefined){
-  $.ajaxSetup({
-    headers: {
-      'Authorization': 'token ' + githubtoken.token
-    }
-  });
-}
+// var githubtoken = require('./githubapikey.js');
+//
+// if (githubtoken !== undefined){
+//   $.ajaxSetup({
+//     headers: {
+//       'Authorization': 'token ' + githubtoken.token
+//     }
+//   });
+// }
 
 
 var baseUrl = 'https://api.github.com/';

@@ -22,12 +22,12 @@
     "jquery": "^2.2.0",
     "underscore": "^1.8.3"
     , "bootstrap-sass": "^3.3.6"
-    
+
     , "handlebars": "^4.0.5"
     , "hbsfy": "^2.5.1"
-    
-    
-    
+
+
+
   },
   "scripts": {
     "html": "cp app/*.html dist/",
@@ -42,7 +42,7 @@
     "favicon": "cp app/favicon.ico dist/",
 
     "build:css": "npm run scss && npm run autoprefixer",
-    "build:js": "npm run lint && npm run browserify",
+    "build:js": "npm run browserify",
     "build:images": "npm run imagemin && npm run favicon",
     "build": "npm run html && npm run build:css && npm run build:js && npm run build:images",
 
@@ -60,7 +60,7 @@
     "transform": [
       "browserify-shim",
       "hbsfy",
-      
+
       "strictify"
     ]
   },
